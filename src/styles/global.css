@@ -1,0 +1,16 @@
+:root {
+    --size-landing: 55%;
+    --size-main: 45%
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, button, input, textarea, a, li {
+    color: #000;
+    text-decoration: none;
+    font: 400 18px Nunito, sans-serif;
+}

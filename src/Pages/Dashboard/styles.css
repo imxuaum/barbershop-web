@@ -1,0 +1,145 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container .landing-box {
+    position: relative;
+
+    width: 100vw;
+    max-height: 100vh;
+    background: url('../../images/background.svg') no-repeat center center;
+    background-size: contain;
+    background-color: chocolate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30vh 0;
+}
+
+.container .landing-box .downButtom {
+    position: absolute;
+    bottom: 30px;
+}
+
+.container .landing-box img {
+    width: 50%;
+}
+
+.container main {
+    position: relative;
+    width: 100%;
+    max-height: 100vh;
+    padding: 50vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container main .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.container main .content a {
+    position: relative;
+    height: 60px;
+    border-radius: 12px;
+    background: #fb7766;
+    margin: 15px 0;
+
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.container main .content a p {
+    margin-left: 15px;
+}
+
+.container main .content a .goIn {
+    visibility: hidden;
+}
+
+.container main .content a .icon {
+    visibility: hidden;
+}
+
+@media (max-width: 375.5px) {
+    .container .landing-box {    
+        padding: 45vh 0;
+    }
+}
+
+@media(min-width: 425.5px) {
+    .container {
+        flex-direction: row;
+    }
+    .container .landing-box {
+        width: var(--size-landing);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('../../images/background.svg') no-repeat center center;
+        background-size: contain;
+        background-color: chocolate;
+        
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        z-index: 100;
+    }
+
+    .container .landing-box .downButtom {
+        display: none;
+    }
+    
+    .container main {
+        width: var(--size-main);
+        padding: 0;
+    }
+    
+    .container main .content a .goIn {
+        position: absolute;
+        top: 0;
+        right: 0;
+    
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    
+        content: 'AAAAAAA';
+        width: 50px;
+        height: 60px;
+        border: 2px solid rgb(251, 119, 102);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        visibility: hidden;
+        transition: .2s;
+    }
+    
+    .container main .content a .icon {
+        visibility: hidden;
+        transition: .001s;
+    }
+    
+    .container main .content a:hover .goIn, .container main .content a:hover .icon {
+        right: -15%;
+        visibility: visible;
+    }
+}
