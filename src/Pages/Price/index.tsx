@@ -1,30 +1,13 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { BsArrowLeft } from 'react-icons/bs';
+import Sidebar from '../../components/Sidebar';
 
-import iconLogoImg from '../../images/icon-barbershop.svg';
 
 import './styles.css';
 
 export default function Price() {
-    const history = useHistory();
     return (
         <div id="page-price">
-            <aside>
-                <header>
-                    <div className="image-block">
-                        <img src={iconLogoImg} alt="Barbershop"/>
-                    </div>
-
-                    <h2>Preços & cortes</h2>
-                </header>
-
-                <footer>
-                    <button onClick={history.goBack}>
-                        <BsArrowLeft size={44} color="#000"/>
-                    </button>
-                </footer>
-            </aside>
+            <Sidebar title="Preços & cortes" />
             <main>
                 <div className="group-items">
                     <div className="item">
