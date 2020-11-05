@@ -5,6 +5,7 @@ import Dashboard from "./Pages/Dashboard";
 import MapBarbershop from './Pages/MapBarbershop';
 import Price from './Pages/Price';
 import About from './Pages/About';
+import Schedule from './Pages/Schedule';
 
 export default function Routes() {
     return (
@@ -14,6 +15,7 @@ export default function Routes() {
                 <Route path="/map-barbershop" component={MapBarbershop} />
                 <Route path="/price" component={Price} />
                 <Route path="/about" component={About} />
+                <Route path="/schedule" component={Schedule} />
             </Switch>
         </BrowserRouter>
     );

@@ -66,7 +66,7 @@ export default function MapBarbershop() {
                     <Link to="price">
                         <GrCut size={22} color="#000" />
                     </Link>
-                    <Link to="about">
+                    <Link to="schedule">
                         <GrCalendar size={22} color="#000" />
                     </Link>
                 </div>

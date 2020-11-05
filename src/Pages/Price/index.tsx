@@ -1,7 +1,10 @@
 import React from 'react';
+
 import Sidebar from '../../components/Sidebar';
 
-
+import imgCorte10 from '../../images/cortes/10.jpeg';
+import imgCorte15 from '../../images/cortes/15.jpeg';
+import imgCorte25 from '../../images/cortes/25.jpeg';
 import './styles.css';
 
 export default function Price() {
@@ -12,7 +15,7 @@ export default function Price() {
                 <div className="group-items">
                     <div className="item">
                         <div className="image-block">
-                            <img src="https://static1.preparadopravaler.com.br/articles/8/29/61/8/@/134150-tesoura-e-maquina-de-corte-sao-ferrament-660x0-2.jpg" alt="Corte na máquina"/>
+                            <img src={imgCorte10} alt="Corte na máquina"/>
                         </div>
                         <div className="text-block">
                             <p>Corte na máquina</p>
@@ -21,20 +24,20 @@ export default function Price() {
                     </div>
                     <div className="item">
                         <div className="image-block">
-                            <img src="https://static1.preparadopravaler.com.br/articles/8/29/61/8/@/134150-tesoura-e-maquina-de-corte-sao-ferrament-660x0-2.jpg" alt="Corte na máquina"/>
+                            <img src={imgCorte15} alt="Sombreado"/>
                         </div>
                         <div className="text-block">
-                            <p>Corte na máquina</p>
-                            <span className="price">R$ 10,00</span>
+                            <p>Sombreado</p>
+                            <span className="price">R$ 15,00</span>
                         </div>
                     </div>
                     <div className="item">
                         <div className="image-block">
-                            <img src="https://static1.preparadopravaler.com.br/articles/8/29/61/8/@/134150-tesoura-e-maquina-de-corte-sao-ferrament-660x0-2.jpg" alt="Corte na máquina"/>
+                            <img src={imgCorte25} alt="Corte & barba"/>
                         </div>
                         <div className="text-block">
-                            <p>Corte na máquina</p>
-                            <span className="price">R$ 10,00</span>
+                            <p>Corte + Barba</p>
+                            <span className="price">R$ 25,00</span>
                         </div>
                     </div>
                 </div>

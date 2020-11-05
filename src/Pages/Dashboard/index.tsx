@@ -33,7 +33,7 @@ export default function Dashboard() {
                             <BsArrowRight className="icon" size={22} color="#000"/>
                         </span>
                     </Link>
-                    <Link to="/">
+                    <Link to="schedule">
                         <GrCalendar size={22} color="#000" />
                         <p>Agenda</p>
                         <span className="goIn">

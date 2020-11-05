@@ -63,11 +63,14 @@
 
 #page-price main .group-items .item .image-block {
     width: 100%;
+    height: 250px;
 }
 
 #page-price main .group-items .item .image-block img{
-    width: 100%;
+    height: 100%;
     border-radius: 12px;
+
+    object-fit: cover;
 }
 
 @media (max-width: 768.5px) and (min-width: 425.5px) {
