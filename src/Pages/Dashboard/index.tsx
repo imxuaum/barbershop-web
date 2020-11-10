@@ -4,11 +4,15 @@ import { GrCut, GrLocation, GrCalendar } from 'react-icons/gr';
 import { BsInfoSquare, BsArrowRight } from 'react-icons/bs';
 import { FiChevronDown } from 'react-icons/fi'
 
+import db from '../../database/connection'
+
 import './styles.css';
 
 import logoImg from '../../images/barbershop.svg';
 
 export default function Dashboard() {
+    const prices = db('prices').select()
+
     return (
         <div className="container">
             <div className="landing-box">

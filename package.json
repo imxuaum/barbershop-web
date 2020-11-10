@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-leaflet": "^2.5.2",
     "@types/react-router-dom": "^5.1.6",
+    "knex": "^0.21.12",
     "leaflet": "^1.7.1",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
@@ -20,11 +21,15 @@
     "react-leaflet": "^2.8.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "sqlite3": "^5.0.0",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
+    "knex:migrate": "knex --knexfile knexfile.js migrate:latest",
+    "knex:rollback": "knex --knexfile knexfile.js migrate:rollback",
+    "knex:seed": "knex --knexfile knexfile.js seed:run",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
