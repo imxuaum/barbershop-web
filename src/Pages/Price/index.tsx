@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Sidebar from '../../components/Sidebar';
 
@@ -7,39 +7,41 @@ import imgCorte15 from '../../images/cortes/15.jpeg';
 import imgCorte25 from '../../images/cortes/25.jpeg';
 import './styles.css';
 
+
+import api from '../../services/api'
+
+interface Cut {
+    id: number;
+    name: string;
+    price: string;
+    image: string;
+}
+
 export default function Price() {
+    const [cuts, setCuts] = useState<Array<Cut>>([])
+
+    useEffect(() => {
+        api.get('cuts').then(response => {
+            setCuts(response.data)
+        })
+    }, [])
+
     return (
         <div id="page-price">
             <Sidebar title="Preços & cortes" />
             <main>
                 <div className="group-items">
-                    <div className="item">
-                        <div className="image-block">
-                            <img src={imgCorte10} alt="Corte na máquina"/>
+                    {cuts.map(cut => (
+                        <div className="item">
+                            <div className="image-block">
+                                <img src={cut.image} alt="Sombreado"/>
+                            </div>
+                            <div className="text-block">
+                                <p>{cut.name}</p>
+                                <span className="price">{cut.price}</span>
+                            </div>
                         </div>
-                        <div className="text-block">
-                            <p>Corte na máquina</p>
-                            <span className="price">R$ 10,00</span>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className="image-block">
-                            <img src={imgCorte15} alt="Sombreado"/>
-                        </div>
-                        <div className="text-block">
-                            <p>Sombreado</p>
-                            <span className="price">R$ 15,00</span>
-                        </div>
-                    </div>
-                    <div className="item">
-                        <div className="image-block">
-                            <img src={imgCorte25} alt="Corte & barba"/>
-                        </div>
-                        <div className="text-block">
-                            <p>Corte + Barba</p>
-                            <span className="price">R$ 25,00</span>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </main>
         </div>
