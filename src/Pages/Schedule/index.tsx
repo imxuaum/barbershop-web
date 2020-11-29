@@ -15,7 +15,7 @@ export default function Schedule() {
                 <div className="hours">
                     <div className="buttom-block">
                         <input type="checkbox" className="cbx" name="domingo" id="domingo"/>
-                        <label className="toggle" htmlFor="domingo">Dominga <span></span> </label>
+                        <label className="toggle" htmlFor="domingo">Domingo <span></span> </label>
                     </div>
                     <div className="buttom-block">
                         <input type="checkbox" className="cbx" name="segunda" id="segunda"/>
@@ -48,10 +48,10 @@ export default function Schedule() {
                     <hr/>
                     <p>Terça à sábado, das 8h às 18h</p>
                     <div className="contact">
-                        <button type="button">
+                        <a href="https://api.whatsapp.com/send?phone=5513996379373&text=Olá" type="button">
                             <FaWhatsapp className="btn-svg" size={25} color="green" />
                             Entre em contato!
-                        </button>
+                        </a>
                         <span>
                             <FaPhone className="btn-svg" size={20} color="black" />
                             3448-0748
