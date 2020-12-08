@@ -55,6 +55,13 @@ main .contact button {
     font-size: 22px;
 }
 
+main .about p {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 25px !important;
+    color: #7f7f82;
+}
+
 .btn-svg {
     margin-right: 15px;
 }

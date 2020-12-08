@@ -48,7 +48,7 @@ export default function Schedule() {
                     <hr/>
                     <p>Terça à sábado, das 8h às 18h</p>
                     <div className="contact">
-                        <a href="https://api.whatsapp.com/send?phone=5513996379373&text=Olá" type="button">
+                        <a id="zap" href="https://api.whatsapp.com/send?phone=5513996379373&text=Olá" type="button">
                             <FaWhatsapp className="btn-svg" size={25} color="green" />
                             Entre em contato!
                         </a>

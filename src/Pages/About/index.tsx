@@ -10,11 +10,12 @@ export default function About() {
             <Sidebar title="Sobre nós" />
             <main>
                 <div className="about">
-                    <h2>Barbershop</h2>
+                    <h1>Barbershop</h1>
                     <hr/>
                     <p>
-                        Foi funcdada em 2013 com próposito de atender os amigos e clientes da cidade de Mongaguá e região e turistas.
-                        Ter um ambiente bom e agradável e um bom atentimento. Agente um horário conosco!
+                        A Barbershop foi fundada em 2013, exclusivamente para o público masculino, com profissionais qualificados e comprometidos para cuidar do cabelo, barba, e do bigode, com cortes clássicos e modernos.
+                        Um espaço descontraído, que conta com produtos de alta qualidade. 
+                        A barbearia tem garantia de satisfação. Você pode voltar em até cinco dias para ajuste do cabelo. Agende seu horário, esperamos por você!
                     </p>
                 </div>
             </main>

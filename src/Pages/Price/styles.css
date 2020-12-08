@@ -58,6 +58,7 @@
 
 #page-price main .group-items .item span {
     font-weight: 800;
+    color: #38761D;
     font-size: 18px;
 }
 
@@ -140,9 +141,7 @@
     }
 
     #page-price main .text-block {
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
+        display: flex;
     }
 
     #page-price main .group-items .item .image-block {
